@@ -122,6 +122,60 @@ nlfage3=cbind(nlf9, nlf18, nlf24)
 dim(nlfage3)
 nlfage3=round(nlfage3)
 
+
+##nlgf
+
+nlgf2=cbind(cts3$GEN190822_E_892669_lib93651_1689_8, cts3$GEN190822_E_892670_lib93565_1689_1, cts3$GEN190822_E_931176_lib93637_1689_7, cts3$GEN181107_S_191332_1_lib70445_1337_8, cts3$GEN181107_S_197129_3_lib70368_1337_2, cts3$GEN190822_E_892665_lib93643_1689_8, cts3$GEN190822_E_892666_lib93607_1689_5, cts3$GEN190822_E_897331_lib93606_1689_5, cts3$GEN190822_E_931175_lib93571_1689_2, cts3$GEN181107_S_191329_1_lib70410_1337_6, cts3$GEN181107_S_191330_1_lib70430_1337_7)
+batchnlgf2=factor(c(2,2,2,1,1,2,2,2,2,1,1))
+dim(nlgf2)
+colnames(nlgf2)=c("nlgf2.1", "nlgf2.2", "nlgf2.3", "nlgf2.4", "nlgf2.5", "nlgf2.6", "nlgf2.7", "nlgf2.8", "nlgf2.9", "nlgf2.10", "nlgf2.11")
+psnlgf2=as.numerical(c("2.83",	"2.33",	"2.83",	"2.17",	"4", "2",	"3.17",	"1.67",	"2.83",	"2.5",	"2.17"))
+dim(nlgf2)
+
+##4month
+dim(cts3)
+nlgf4=cbind(cts3$GEN190822_E_846025_lib93622_1689_6, cts3$GEN190822_E_846026_lib93608_1689_5, cts3$GEN190822_E_846027_lib93558_1689_1, cts3$GEN181107_S_183647_3_lib70418_1337_6 , cts3$GEN181107_S_186319_2_lib70396_1337_4 , cts3$GEN181107_S_186319_3_lib70442_1337_8, cts3$GEN181107_S_745232_lib70404_1337_5, cts3$`NG-24492_805516_lib386566_6738_2`, cts3$GEN190822_E_843819_lib93633_1689_7, cts3$GEN190822_E_896314_lib93629_1689_6, cts3$GEN181107_S_N57_2_lib70428_1337_7, cts3$GEN181107_S_N57_3_lib70369_1337_2) 
+batchnlgf4=factor(c(2,2,2,1,1,1,1,3,2,2,1,1))
+dim(nlgf4)
+colnames(nlgf4)=c("nlgf4.1", "nlgf4.2", "nlgf4.3", "nlgf4.4", "nlgf4.5", "nlgf4.6", "nlgf4.7", "nlgf4.8", "nlgf4.9", "nlgf4.10", "nlgf4.11", "nlgf4.12")
+nlgf4ps=as.numeric(c("4.5",	"4.75",	"4.5",	"4.5", "5",	"4.75", "4",	"4",	"4.5",	"4.25",	"4.5",	"4.5"))
+
+nlgf9=cbind(cts3$GEN190822_E_746848_lib93630_1689_7, cts3$GEN190822_E_803956_lib93564_1689_1, cts3$GEN190822_E_803957_lib93621_1689_6, cts3$GEN190822_E_803958_lib93576_1689_2, cts3$GEN190822_E_805530_lib93623_1689_6, cts3$GEN190822_E_825465_lib93627_1689_6, cts3$GEN190822_E_723920_lib93635_1689_7, cts3$GEN190822_E_723921_lib93615_1689_5, cts3$GEN190822_E_825290_lib93574_1689_2, cts3$GEN181107_S_N35_1_lib70401_1337_5, cts3$`GEN181107_S_N35-2_lib70372_1337_2`, cts3$GEN181107_S_N37_1_lib70403_1337_5)
+batchng9=factor(c(2,2,2,2,2,2,2,2,2,1,1,1))
+dim(nlgf9)
+colnames(nlgf9)=c("nlgf91", "nlgf92", "nlgf93", "nlgf94", "nlgf95", "nlgf96", "nlgf97", "nlgf98", "nlgf99", "nlgf910", "nlgf911", "nlgf912")
+genderng9m=factor(c(rep("f", 6), rep("m", 6)))
+nlgf9ps= as.numeric(c("5.75",	"5",	"5.25",	"5", "5.5",	"5", "5.5", "5.75",	"5",	"5",	"4.75",	"5"))
+
+nlgf18=cbind( cts3$GEN190822_E_492037_lib93631_1689_7, cts3$GEN190822_E_571489_lib93649_1689_8, cts3$GEN190822_E_589853_lib93620_1689_6, cts3$GEN190822_E_590567_lib93632_1689_7, cts3$`NG-24492_805531_lib386567_6738_2`, cts3$GEN190822_E_496030_lib93647_1689_8, cts3$GEN190822_E_508442_lib93641_1689_7, cts3$GEN190822_E_509979_lib93589_1689_3, cts3$GEN190822_E_524732_lib93652_1689_8, cts3$GEN190822_E_540627_lib93595_1689_4, cts3$GEN190822_E_551246_lib93646_1689_8) 
+batchnlgf18=factor(c(2,2,2,2,3,2,2,2,2,2,2))
+dim(nlgf18)
+colnames(nlgf18)=c("nlgf181", "nlgf182", "nlgf183", "nlgf184", "nlgf185", "nlgf186", "nlgf187", "nlgf188", "nlgf189", "nlgf1810", "nlgf1811")
+genderng18m=factor(c(rep("f", 5), rep("m", 6)))
+nlgf18ps=as.numeric(c("4.83",	"5.67",	"5.5",	"5.83",	"5.67", "5.5",	"5.83",	"5.33",	"5.67",	"5.67",	"5.17"))
+
+nlgf24=cbind(cts3$`NG-24492_509981_lib386573_6738_2`, cts3$`NG-24492_511780_lib386572_6738_2`, cts3$`NG-24492_511781_lib386574_6738_3`, cts3$`NG-24492_527103_lib386569_6738_2`, cts3$`NG-24492_527104_lib386570_6738_2`, cts3$`NG-24492_527105_lib386571_6738_2`)         
+batchnlgf24=factor(c(3,3,3,3,3,3))
+dim(nlgf24)
+colnames(nlgf24)=c("nlgf241", "nlgf242", "nlgf243", "nlgf244", "nlgf245", "nlgf246")
+genderng24m=factor(c( rep("m", 5)))
+nlgf24ps=as.numeric(c("5.67",	"5.67",	"5.83",	"5.75",	"5.75",	"5.25"))
+## 2,2,2,2,2,2,2,2,2,1,1,1,2,2,2,2,3,2,2,2,2,2,2, 3,3,3,3,3,3
+##5.75",	"5",	"5.25",	"5", "5.5",	"5", "5.5", "5.75",	"5",	"5",	"4.75",	"5", "4.83",	"5.67",	"5.5",	"5.83",	"5.67", "5.5",	"5.83",	"5.33",	"5.67",	"5.67",	"5.17", "5.67",	"5.67",	"5.83",	"5.75",	"5.75",	"5.25"
+nlgfage=cbind(nlgf9, nlgf18, nlgf24)
+nlgfage3=cbind(nlgf9, nlgf18)
+dim(nlgfage)
+row.names(nlgfage)=row.names(cts3)
+nlgfageps=as.numeric(c("5.75",	"5",	"5.25",	"5", "5.5",	"5", "5.5", "5.75",	"5",	"5",	"4.75",	"5", "4.83",	"5.67",	"5.5",	"5.83",	"5.67", "5.5",	"5.83",	"5.33",	"5.67",	"5.67",	"5.17", "5.67",	"5.67",	"5.83",	"5.75",	"5.75",	"5.25"))
+nlgfageps2=scale(nlgfageps, center = TRUE)
+row.names(nlgfage)=row.names(cts3)
+batchnlgfage=factor(c(batchng9, batchnlgf18, batchnlgf24 ))
+batchnlgfage=factor(c(2,2,2,2,2,2,2,2,2,1,1,1,2,2,2,2,3,2,2,2,2,2,2,3,3,3,3,3,3))
+gendernlgf= factor(c(genderng9m, genderng18m))
+dim(nlgfage)
+
+allnlgf=cbind(nlgf2, nlgf4, nlgf9, nlgf18, nlgf24)
+dim(allnlgf)
 #htau
 
 htau9= cbind(cts3$`NG-24492_806526_lib386622_6738_6`, cts3$`NG-24492_812244_lib386623_6738_6`, cts3$`NG-24492_831427_lib386624_6738_6`, cts3$`NG-24492_835328_lib386634_6738_7`, cts3$`NG-24492_845420_lib386625_6738_6`, cts3$GEN190822_E_743931_lib93585_1689_3, cts3$GEN190822_E_831424_lib93619_1689_6, cts3$`NG-24492_835330_lib386620_6738_6`, cts3$`NG-24492_856365_lib386619_6738_6`, cts3$`NG-24492_882506_lib386621_6738_6`)
